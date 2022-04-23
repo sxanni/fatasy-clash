@@ -1,0 +1,30 @@
+Creating a game that
+-checks for a win, loose or draw
+
+-Against a computer that randomly selects rock, paper or scissors
+
+-if computer chooses rock
+	and you choose scissors =(loose)
+	and you choose paper =(win)
+	and you choose rock = (draw)
+
+-if computer chooses paper
+	and you choose scissors =(win)
+	and you choose paper =(draw)
+	and you choose rock = (loose)
+
+-if computer chooses scissors
+	and you choose scissors =(draw)
+	and you choose paper =(loose)
+	and you choose rock = (win)
+
+KEY METHODS AND WHY----?
+
+.getElementById()
+.querySelectorAll()
+.forEach()
+.addEventListener()
+.innerHTML()
+e.target.id  ??
+Math.floor()
+Math.random()

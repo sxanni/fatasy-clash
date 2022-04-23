@@ -1,0 +1,38 @@
+html{
+    align-content: center;
+    text-align: center;
+    background-color: #000000;
+    color: azure;
+}
+
+.gameArea{
+    display: block;
+    position: relative;
+    z-index: 2;
+    padding: 7px;
+    padding-bottom: 7px;
+    background-color: black ;
+    
+}
+
+#myGallery{
+    
+    /* text-align: center; */
+align-content: center;
+  position:relative;
+  width:100vw; /* Set your image width */
+  height:40vh; /* Set your image height */
+}
+#myGallery img{
+    text-align: match-parent;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+  display:none;
+  position:absolute;
+  top:0;
+  left:0;
+    width: 100%;
+}
+#myGallery img.active{
+  display:block;
+}
