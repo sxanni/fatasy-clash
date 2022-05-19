@@ -39,29 +39,61 @@ function generateComputerChoice(){
     }
     compChoice.innerHTML = oppChoice
 }
+
+// rockpaper scissors rules:- shield beats blade, blade beats magic, magic beats shield
 function getResult(){
     if (oppChoice === playerChoice ){
-    result = 'You are on equal footing!!'
+    result = 'Sparks fly! : You are on equal footing!!'
     }
     if (oppChoice === 'Shield' && playerChoice === "Magic"){
-    result = 'You have drawn blood!!'
+    result = 'An arcane blast sores through the air, incinerating your foe and their shield!!'
     }
     if (oppChoice === 'Shield' && playerChoice === "Blade"){
-    result = 'Your blows have no effect!!'
+    result = 'Your blade strikes true yet, your blows have no effect on their shield!!'
     }
     if (oppChoice === 'Magic' && playerChoice === "Blade"){
     result = 'You cleaved through the opponents magic like butter!!'
     }
-    if (oppChoice === 'Blade' && playerChoice === "Shield"){
-    result = 'You blocked that attack!!'
+    if (oppChoice === 'Magic' && playerChoice === "Shield"){
+    result = 'Both you and your shield have been incenerated!!'
     }
     if (oppChoice === 'Blade' && playerChoice === "Magic"){
-    result = 'Your magic was cut down, You have been struck!!'
+    result = 'Your magic was cut down by an enchanted blade'
+    }
+    if (oppChoice === 'Blade' && playerChoice === "Shield"){
+    result = 'You blocked their blade strike!! they are vunlurable!'
     }
     resultDisplay.innerHTML = result
 
 }
+// Below will be more complex version with realistic reactions to previously played choices version 
 
+// function getResult(){
+//     if (oppChoice === playerChoice ){
+//     result = 'You are on equal footing!!'
+//     }
+//     if (oppChoice === 'Shield' && playerChoice === "Magic"){
+//     result = 'You have drawn blood!!'
+//     }
+//     if (oppChoice === 'Shield' && playerChoice === "Blade"){
+//     result = 'Your blows have no effect!!'
+//     }
+//     if (oppChoice === 'Magic' && playerChoice === "Blade"){
+//     result = 'You cleaved through the opponents magic like butter!!'
+//     }
+//     if (oppChoice === 'Magic' && playerChoice === "Shield"){
+//     result = 'You blocked that attack!!'
+//     }
+//     if (oppChoice === 'Blade' && playerChoice === "Magic"){
+//     result = 'Your magic was cut down, You have been struck!!'
+//     }
+//     if (oppChoice === 'Blade' && playerChoice === "Shield"){
+//     result = 'You blocked their blade strike!! they are vunlurable!'
+//     }
+//     resultDisplay.innerHTML = result
+
+// }
+// -----------------------------------------------------------------------
 //randomise gifs
 
 
